@@ -28,8 +28,8 @@ function setup() {
 function draw() {
     speed = map(mouseX, 0, width, 1, 10);
     
-    if(x >= (width - padding) && y <= padding) 
-    xDirection = 0
+    if(x >= (width - padding) && (y <= padding)) {
+    xDirection = 0;
     yDirection = 1;
     r = random(255);
     }
@@ -46,7 +46,7 @@ function draw() {
         b = random(255);
         }
   
-          else((x <= padding) && (y <= padding)) {
+          else if((x <= padding) && (y <= padding)) {
           xDirection = 1;
           yDirection = 0;
           r = random(255);
